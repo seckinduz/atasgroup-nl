@@ -1,0 +1,30 @@
+:root{--navy:#0e2a47;--cream:#e6e4e0;--gold:#b89758;--ink:#12151a}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Georgia,"Times New Roman",serif;background:var(--navy);color:var(--cream);line-height:1.65}
+a{color:var(--gold);text-decoration:none}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header{border-bottom:1px solid rgba(184,151,88,.35)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;padding:18px 20px;flex-wrap:wrap;gap:10px}
+.logo{font-size:1.25rem;letter-spacing:.18em;text-transform:uppercase;color:var(--cream)}
+.logo b{color:var(--gold);font-weight:normal}
+nav a{margin-left:22px;font-family:Arial,sans-serif;font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;color:var(--cream)}
+nav a:hover{color:var(--gold)}
+.hero{padding:96px 0 80px;text-align:center}
+.hero h1{font-size:clamp(2rem,5vw,3.4rem);font-weight:normal;line-height:1.2}
+.hero h1 span{color:var(--gold)}
+.hero p{max-width:640px;margin:22px auto 34px;opacity:.9}
+.btn{display:inline-block;padding:13px 28px;border:1px solid var(--gold);color:var(--gold);font-family:Arial,sans-serif;font-size:.85rem;letter-spacing:.1em;text-transform:uppercase;transition:.2s}
+.btn:hover,.btn.solid{background:var(--gold);color:var(--navy)}
+section{padding:64px 0}
+section.light{background:var(--cream);color:var(--ink)}
+h2{font-size:1.9rem;font-weight:normal;margin-bottom:10px}
+h2::after{content:"";display:block;width:56px;height:2px;background:var(--gold);margin-top:12px}
+.lead{max-width:680px;margin:14px 0 34px;opacity:.9}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
+.card{border:1px solid rgba(184,151,88,.5);padding:30px;background:rgba(255,255,255,.03)}
+.light .card{background:#fff;border-color:rgba(14,42,71,.2)}
+.card h3{font-weight:normal;font-size:1.3rem;margin-bottom:10px;color:var(--gold)}
+.card p{margin-bottom:18px;font-size:.98rem}
+footer{border-top:1px solid rgba(184,151,88,.35);padding:30px 0;text-align:center;font-family:Arial,sans-serif;font-size:.85rem;opacity:.9}
+@media(max-width:600px){nav a{margin:0 12px 0 0}.hero{padding:64px 0 52px}}
